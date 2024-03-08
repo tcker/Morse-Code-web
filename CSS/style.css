@@ -1,0 +1,262 @@
+/*  FOR RESPONSIVENESS   */
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  html {
+      height: 100%; /* Retained */
+  }
+  .box {
+      bottom: 50px;
+      justify-content: center; /* Adjust bottom position for mobile phones */
+  }
+
+  h1 {
+    bottom: 640px;
+  }
+  
+    h2 {
+        bottom: 500px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+  /* For tablets */
+  html {
+      height: 100%; /* Retained */
+  }
+  .box {
+      bottom: 100px;
+      justify-content: center; /* Adjust bottom position for tablets */
+  }
+  h1 {
+    bottom: 640px;
+  }
+  
+    h2 {
+        bottom: 500px;
+    }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1418px) {
+  /* For tablets up to larger screens */
+  html {
+      height: 100%; /* Retained */
+  }
+  .box {
+      bottom: 120px;
+      justify-content: center; /* Adjust bottom position for tablets to larger screens */
+  }
+  h1 {
+    bottom: 640px;
+  }
+  
+    h2 {
+        bottom: 500px;
+    }
+}
+
+@media only screen and (max-width:414px) {
+  /* For Other phone size */
+  html {
+      height: 100%; /* Retained */
+  }
+  .box {
+      bottom: 80px;
+      justify-content: center; /* Adjust bottom position for other phone sizes */
+  }
+  h1 {
+    bottom: 640px;
+  }
+  
+    h2 {
+        bottom: 500px;
+    }
+}
+  
+  
+  /*  FOR RESPONSIVENESS   */
+  
+  
+  
+  
+  body {
+      background-color: black;
+      background-image: url('../assets/bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      font-family: "ibmpc", monospace;
+      font-size: 16px;
+  }
+  
+  @font-face {
+      font-family: "ibmpc";
+      src: url("./WebPlus_IBM_VGA_8x16.woff") format("woff");
+  }
+  
+  /*  Titles   */
+
+  h1, h2, p {
+      color: white;
+      justify-content: flex-start;
+  }
+  
+h1 {
+  position: fixed;
+  left: 80px;
+  bottom: 340px;
+}
+
+  h2 {
+      font-size: 25px;
+      font-style: bold;
+      position: fixed;
+      left: 80px;
+      bottom: 300px;
+  }
+  
+  .typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 1.5s steps(100, end), /* Adjust typing speed and steps */
+    blink-caret .75s steps(1) forwards;
+    animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: blue; }
+}
+
+
+  /*  Titles   */
+
+  .box {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    padding: 20px;
+    width: 285px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    right: 230px; 
+    bottom: 150px;
+}
+
+.container1,
+.container2,
+.container3 {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+  #input {
+      border-radius: 8px; 
+      font-size: 15pt; 
+      height: 100px; 
+      width: 200px; 
+      padding: 10px; 
+      box-sizing: border-box; 
+      border: 2px;
+      margin-top: 10px;
+      font-family: "ibmpc", monospace;
+  }
+  
+  #output {
+      color: black;
+      border-radius: 8px;
+      font-size: 15pt;
+      height: 200px;
+      width: 200px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 2px;
+      margin-top: 5px;
+      margin-bottom: 100px;
+      font-family: "ibmpc", monospace;
+  }
+  
+  #button {
+      border: none;
+      border-radius: 9px;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      font-style: bold;
+      color: black;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+      transition: transform 0.2s, box-shadow 0.2s; 
+      font-family: "ibmpc", monospace;
+  }
+  
+  #button:hover {
+      background-color: dimgray;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  #button:active {
+      transform: translateY(2px); 
+  }
+  
+  footer {
+      text-align: center;
+      margin-top: 10px;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #3333;
+      padding: 1px 1px;
+      font-size: 10px;
+      font-style: bold;
+      line-height: 50px;
+      opacity: 50%;
+  }
+  
+  #toggleMusicButton {
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    background-image: url('../assets/off-vol.svg');
+    background-color: transparent; /* Remove background color */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  #toggleMusicButton:hover {
+    background-color: #555;
+  }
+
+  #toggleMusicButton.on {
+    background-image: url('../assets/on-vol.svg');
+}
+
+#toggleMusicButton.off {
+    background-image: url('../assets/off-vol.svg');
+}

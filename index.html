@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="main.js"></script>
+  
+  <title>
+    Morse Code Converter
+  </title>
+</head>
+
+<body>
+  <h1>Morse Code Converter</h1>
+<div class="typewriter">
+  <h2 id="myTypewriter">Text to Morse Code | Morse Code to Text</h2>
+</div>
+
+  <div class="container">
+    <div class="box">
+      <div class="container1">
+        <input id="input" type="text" style="font-size:15pt;height:40px;width:200px;" placeholder="Input">
+      </div>
+      <div class="container2">
+        <button id="button" type="button" onclick="myFunction()">Convert</button>
+      </div>
+      <div class="container3">
+        <input id="output" type="text" style="font-size:15pt;height:40px;width:200px;" placeholder="Output" readonly>
+      </div>
+    </div>
+
+    <audio id="lobbyMusic" loop autoplay>
+      <source src="Assets/Morse Code Music.mp3" type="audio/mp3">
+    </audio>
+    <button id="toggleMusicButton" onclick="toggleLobbyMusic()"></button>
+  <footer>
+    <p1>&copy; Ram Baarde 2024. All rights reserved. Credits to MUSEONG · </p1>
+  </footer>
+
+</body>
+
+</html>
