@@ -84,12 +84,12 @@ function toggleLobbyMusic() {
   
     function changeTxt(e) {
       var _h2 = this;
-      _h2.style.animation = 'none'; // set element animation to none
-      setTimeout(function() { // you surely want a delay before the next message appears
+      _h2.style.animation = 'none';
+      setTimeout(function() { 
         _h2.innerHTML = messages[rank];
-        var speed = 6 * messages[rank].length / 100; // adjust the speed (6 is the original speed, 100 is the original string length
-        _h2.style.animation = 'typing ' + speed + 's steps(100, end), blink-caret .99s steps(1) forwards'; //  switch to the original set of animation      
-        (rank === messages.length - 1) ? rank = 0 : rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
+        var speed = 6 * messages[rank].length / 100; 
+        _h2.style.animation = 'typing ' + speed + 's steps(100, end), blink-caret .99s steps(1) forwards'; 
+        (rank === messages.length - 1) ? rank = 0 : rank++; 
       }, 1000);
     }
 };
