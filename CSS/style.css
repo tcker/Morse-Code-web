@@ -3,11 +3,11 @@
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   html {
-      height: 100%; /* Retained */
+      height: 100%; 
   }
   .box {
       bottom: 50px;
-      justify-content: center; /* Adjust bottom position for mobile phones */
+      justify-content: center; 
   }
 
   h1 {
@@ -26,7 +26,7 @@
   }
   .box {
       bottom: 100px;
-      justify-content: center; /* Adjust bottom position for tablets */
+      justify-content: center;
   }
   h1 {
     bottom: 640px;
@@ -40,11 +40,11 @@
 @media only screen and (min-width: 771px) and (max-width: 1418px) {
   /* For tablets up to larger screens */
   html {
-      height: 100%; /* Retained */
+      height: 100%; 
   }
   .box {
       bottom: 120px;
-      justify-content: center; /* Adjust bottom position for tablets to larger screens */
+      justify-content: center; 
   }
   h1 {
     bottom: 640px;
@@ -58,11 +58,11 @@
 @media only screen and (max-width:414px) {
   /* For Other phone size */
   html {
-      height: 100%; /* Retained */
+      height: 100%; 
   }
   .box {
       bottom: 80px;
-      justify-content: center; /* Adjust bottom position for other phone sizes */
+      justify-content: center; 
   }
   h1 {
     bottom: 640px;
@@ -116,13 +116,13 @@ h1 {
   }
   
   .typewriter h2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typewriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
-    typing 1.5s steps(100, end), /* Adjust typing speed and steps */
+    typing 1.5s steps(100, end),
     blink-caret .75s steps(1) forwards;
     animation-fill-mode: forwards;
 }
@@ -243,7 +243,7 @@ h1 {
     cursor: pointer;
     z-index: 9999;
     background-image: url('../assets/off-vol.svg');
-    background-color: transparent; /* Remove background color */
+    background-color: transparent; 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
